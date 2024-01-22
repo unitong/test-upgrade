@@ -9,7 +9,6 @@ variable "test_num_without_type" {
 
 variable "test_bool" {
   type       = bool
-  default    = true
 }
 
 variable "test_list_number" {
@@ -64,7 +63,6 @@ variable "test_object_with_default_optional" {
 variable "test_list_str" {
   description = "List string"
   type = list(string)
-  default = ["Dec", "16"]
 }
 
 output "output_test_str" {
