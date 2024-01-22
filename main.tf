@@ -9,6 +9,7 @@ variable "test_num_without_type" {
 
 variable "test_bool" {
   type       = bool
+  default    = false
 }
 
 variable "test_list_number" {
@@ -60,11 +61,6 @@ variable "test_object_with_default_optional" {
 }
 
 
-variable "test_list_str" {
-  description = "List string"
-  type = list(string)
-}
-
 output "output_test_str" {
   value         = var.test_str 
 }
@@ -99,9 +95,6 @@ output "output_test_object_with_default_optional" {
 }
 
 
-output "output_test_list_str" {
-value           = var.test_list_str
-}
 
 output "endpoint_localhost" {
   value         = "https://localhost"
