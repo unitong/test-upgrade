@@ -25,7 +25,7 @@ variable "test_map_without_type" {
   }
 }
 
-variable "map_any" {
+variable "map_string" {
   type        = map(string)
   default     = {}
 }
