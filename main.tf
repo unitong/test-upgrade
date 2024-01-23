@@ -83,7 +83,7 @@ output "output_test_map_without_type" {
 }
 
 output "output_map_any" {
-   value       = var.map_any
+   value       = var.map_string
 }
 
 output "output_list_map_string" {
