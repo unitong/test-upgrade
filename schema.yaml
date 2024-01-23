@@ -64,8 +64,8 @@ components:
             colSpan: 12
             group: Basic
             order: 5
-        map_any:
-          title: Map Any
+        map_string:
+          title: Map String
           type: object
           default: {}
           additionalProperties:
