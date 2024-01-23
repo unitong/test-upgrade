@@ -9,7 +9,7 @@ components:
         test_str:
           title: Test Str
           type: string
-          default: variable-test
+          default: variable-test-schema-yaml
           x-walrus-ui:
             group: Basic
             order: 1
@@ -43,7 +43,7 @@ components:
           title: Test Map Without Type
           type: object
           default:
-            age2: "30"
+            age2: "17"
             email2: john@example.com
             name2: John
           required:
