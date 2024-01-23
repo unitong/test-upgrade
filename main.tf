@@ -26,7 +26,7 @@ variable "test_map_without_type" {
 }
 
 variable "map_any" {
-  type        = map(any)
+  type        = map(string)
   default     = {}
 }
 
