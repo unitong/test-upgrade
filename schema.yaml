@@ -9,7 +9,7 @@ components:
         test_str:
           title: Test Str
           type: string
-          default: variable-test-schema-yaml
+          default: variable-test
           x-walrus-ui:
             group: Basic
             order: 1
@@ -43,7 +43,7 @@ components:
           title: Test Map Without Type
           type: object
           default:
-            age2: "25"
+            age2: "30"
             email2: john@example.com
             name2: John
           required:
@@ -64,16 +64,19 @@ components:
             colSpan: 12
             group: Basic
             order: 5
-        map_string:
-          title: Map String
+        map_any:
+          title: Map Any
           type: object
           default: {}
           additionalProperties:
-            type: string
+            type: object
+            x-walrus-ui:
+              colSpan: 12
           x-walrus-ui:
             colSpan: 12
             group: Basic
             order: 6
+            widget: YamlEditor
         list_map_string:
           title: List Map String
           type: array

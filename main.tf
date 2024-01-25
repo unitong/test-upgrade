@@ -25,8 +25,8 @@ variable "test_map_without_type" {
   }
 }
 
-variable "map_string" {
-  type        = map(string)
+variable "map_any" {
+  type        = map(any)
   default     = {}
 }
 
@@ -83,7 +83,7 @@ output "output_test_map_without_type" {
 }
 
 output "output_map_any" {
-   value       = var.map_string
+   value       = var.map_any
 }
 
 output "output_list_map_string" {
