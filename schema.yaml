@@ -9,7 +9,7 @@ components:
         test_str:
           title: Test Str
           type: string
-          default: variable-test
+          default: variable-test-schema-yaml
           x-walrus-ui:
             group: Basic
             order: 1
