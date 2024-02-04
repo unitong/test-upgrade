@@ -51,6 +51,20 @@ variable "map_string" {
   }
 }
 
+variable "nested_map_variable" {
+  type = map(map(string))
+  default = {
+    "test1" = {
+      "subkey1" = "value1"
+      "subkey2" = "value2"
+    }
+    "test2" = {
+      "subkey3" = "value3"
+      "subkey4" = "value4"
+    }
+  }
+}
+
 variable "test_object_with_default_optional" {
   type          = object({
     name        = string
@@ -105,9 +119,13 @@ output "output_map_string" {
 }
 
 output "output_test_object_with_default_optional" {
-  value         = var.test_object_with_default_optional
+  value       = var.test_object_with_default_optional
 }
 
+output "output_nested_map_variable" {
+  value       = var.nested_map_variable
+  
+}
 
 output "endpoint_localhost" {
   value         = "https://localhost"
