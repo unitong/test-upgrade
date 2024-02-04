@@ -41,7 +41,7 @@ variable "list_map_string" {
   ]
 }
 
-variable "list_map" {
+variable "map_string" {
   type       = map(string)
   default = {
     "Name"        = "MyInstance"
@@ -100,8 +100,8 @@ output "output_list_map_string" {
    value       = var.list_map_string
 }
 
-output "output_list_map" {
-   value      = var.list_map
+output "output_map_string" {
+   value      = var.map_string
 }
 
 output "output_test_object_with_default_optional" {
