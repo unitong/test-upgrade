@@ -41,6 +41,16 @@ variable "list_map_string" {
   ]
 }
 
+variable "list_map" {
+  type       = map(string)
+  default = {
+    "Name"        = "MyInstance"
+    "Environment" = "Production"
+    "Owner"       = "John Doe"
+    "Department"  = "Engineering"
+  }
+}
+
 variable "test_object_with_default_optional" {
   type          = object({
     name        = string
@@ -90,12 +100,16 @@ output "output_list_map_string" {
    value       = var.list_map_string
 }
 
+output "output_list_map" {
+   value      = var.list_map
+}
+
 output "output_test_object_with_default_optional" {
   value         = var.test_object_with_default_optional
 }
 
 
-
 output "endpoint_localhost" {
   value         = "https://localhost"
 }
+
