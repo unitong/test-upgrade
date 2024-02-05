@@ -20,7 +20,7 @@ variable "test_list_number" {
 variable "test_map_without_type" {
   default     = {
     name2      = "John"
-    age2      = "30"
+
     email2     = "john@example.com"
   }
 }
