@@ -78,7 +78,7 @@ variable "test_object_with_default_optional" {
     name        = "Bob"
     age         = 23
     email       = {
-        address = "bob"
+        
         domain  = "example.com"
     }
   }
