@@ -20,7 +20,7 @@ variable "test_list_number" {
 variable "test_map_without_type" {
   default     = {
     name2      = "John"
-
+    age2       = "18"
     email2     = "john@example.com"
   }
 }
@@ -76,9 +76,9 @@ variable "test_object_with_default_optional" {
   })
   default       = {
     name        = "Bob"
-    
+    age         = "22"  
     email       = {
-        
+        address = "bob"
         domain  = "example.com"
     }
   }
