@@ -1,6 +1,5 @@
 variable "test_str" {
   type        = string
-  default     = "variable-test"
 }
 
 variable "test_num_without_type" {
