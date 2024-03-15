@@ -5,10 +5,9 @@ components:
   schemas:
     variables:
       type: object
-      required:
-      - test_str
       properties:
         test_str:
+          default: "test schema"
           title: Test Str
           type: string
           x-walrus-ui:
